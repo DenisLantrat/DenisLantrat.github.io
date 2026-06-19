@@ -39,25 +39,29 @@ interactiveElements.forEach(el => {
   });
 });
 
-// ===== МОБИЛЬНОЕ МЕНЮ =====
+// ===== МОБИЛЬНОЕ МЕНЮ (СВОРАЧИВАЕМОЕ) =====
 const menuToggle = document.getElementById('menuToggle');
 const sidebar = document.getElementById('sidebar');
 
-if (menuToggle) {
-  menuToggle.addEventListener('click', () => {
-    sidebar.classList.toggle('active');
-  });
-}
+// Открытие/закрытие по клику на кнопку
+menuToggle.addEventListener('click', (e) => {
+  e.stopPropagation();
+  sidebar.classList.toggle('active');
+});
 
-// Закрытие меню при клике на пункт (для мобильных)
+// Закрытие при клике на пункт меню
 document.querySelectorAll('.sidebar nav a').forEach(link => {
   link.addEventListener('click', () => {
-    if (window.innerWidth <= 768) {
-      sidebar.classList.remove('active');
-    }
+    sidebar.classList.remove('active');
   });
 });
 
+// Закрытие при клике вне меню
+document.addEventListener('click', (e) => {
+  if (!sidebar.contains(e.target) && e.target !== menuToggle) {
+    sidebar.classList.remove('active');
+  }
+});
 // ===== ПОДСВЕТКА АКТИВНОГО ПУНКТА МЕНЮ =====
 const sections = document.querySelectorAll('section');
 const navLinks = document.querySelectorAll('.sidebar nav a');

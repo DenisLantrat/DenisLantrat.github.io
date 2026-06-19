@@ -43,7 +43,7 @@ title: Денис Лантрат - Программист
     <section id="about">
       <div class="card">
         <h2>Обо мне</h2>
-        <p>Создаю свои проекты. В свободное время увлекаюсь фотографирую пейзажи.</p>
+        <p>Создаю свои проекты. В свободное время увлекаюсь фотографией пейзажей.</p>
       </div>
     </section>
 
@@ -58,7 +58,7 @@ title: Денис Лантрат - Программист
           <span class="skill-tag">Python</span>
           <span class="skill-tag">Git</span>
           <span class="skill-tag">VS Code</span>
-          <span class="skill-tag">1с</span>
+          <span class="skill-tag">1C</span>
         </div>
       </div>
     </section>
@@ -84,21 +84,28 @@ title: Денис Лантрат - Программист
       </div>
     </section>
 
-    <!-- СЕРТИФИКАТЫ -->
+       <!-- СЕРТИФИКАТЫ -->
     <section id="certificates">
       <div class="card">
         <h2>Сертификаты</h2>
         <div class="certificates-grid">
-          <div class="certificate-item"><img src="{{ '/assets/images/certificates/1.jpg' | relative_url }}" alt="Сертификат 1"></div>
-          <div class="certificate-item"><img src="{{ '/assets/images/certificates/2.jpg' | relative_url }}" alt="Сертификат 2"></div>
-          <div class="certificate-item"><img src="{{ '/assets/images/certificates/3.jpg' | relative_url }}" alt="Сертификат 3"></div>
-          <div class="certificate-item"><img src="{{ '/assets/images/certificates/4.jpg' | relative_url }}" alt="Сертификат 4"></div>
-          <div class="certificate-item"><img src="{{ '/assets/images/certificates/5.jpg' | relative_url }}" alt="Сертификат 5"></div>
-          <div class="certificate-item"><img src="{{ '/assets/images/certificates/6.jpg' | relative_url }}" alt="Сертификат 6"></div>
-          <div class="certificate-item"><img src="{{ '/assets/images/certificates/7.jpg' | relative_url }}" alt="Сертификат 7"></div>
-          <div class="certificate-item"><img src="{{ '/assets/images/certificates/8.jpg' | relative_url }}" alt="Сертификат 8"></div>
-          <div class="certificate-item"><img src="{{ '/assets/images/certificates/9.jpg' | relative_url }}" alt="Сертификат 9"></div>
-          <div class="certificate-item"><img src="{{ '/assets/images/certificates/10.jpg' | relative_url }}" alt="Сертификат 10"></div>
+          <div class="certificate-item"><img src="{{ '/assets/images/certificates/sql.png' | relative_url }}" alt="SQL"></div>
+          <div class="certificate-item"><img src="{{ '/assets/images/certificates/Грамота%20СТЭТ.png' | relative_url }}" alt="Грамота СТЭТ"></div>
+          <div class="certificate-item"><img src="{{ '/assets/images/certificates/Группа.png' | relative_url }}" alt="Группа"></div>
+          <div class="certificate-item"><img src="{{ '/assets/images/certificates/Диплом%20Фотоконкурс.png' | relative_url }}" alt="Диплом Фотоконкурс"></div>
+          <div class="certificate-item"><img src="{{ '/assets/images/certificates/Дипломная%20студенческая%20весна.png' | relative_url }}" alt="Дипломная студенческая весна"></div>
+          <div class="certificate-item"><img src="{{ '/assets/images/certificates/Диплом%20участника%20ДИКТАНТ%20ПОБЕДЫ.png' | relative_url }}" alt="Диктант Победы"></div>
+          <div class="certificate-item"><img src="{{ '/assets/images/certificates/Кураторство%20(2).png' | relative_url }}" alt="Кураторство 2"></div>
+          <div class="certificate-item"><img src="{{ '/assets/images/certificates/Кураторство.png' | relative_url }}" alt="Кураторство"></div>
+          <div class="certificate-item"><img src="{{ '/assets/images/certificates/Медиа-школа.png' | relative_url }}" alt="Медиа-школа"></div>
+          <div class="certificate-item"><img src="{{ '/assets/images/certificates/Медиачетверг.png' | relative_url }}" alt="Медиачетверг"></div>
+          <div class="certificate-item"><img src="{{ '/assets/images/certificates/Сертификат%20студенческой%20весны.png' | relative_url }}" alt="Сертификат студенческой весны"></div>
+          <div class="certificate-item"><img src="{{ '/assets/images/certificates/Топчан.png' | relative_url }}" alt="Топчан"></div>
+          <div class="certificate-item"><img src="{{ '/assets/images/certificates/Топчан1.png' | relative_url }}" alt="Топчан 1"></div>
+          <div class="certificate-item"><img src="{{ '/assets/images/certificates/Траектория%20будущего.png' | relative_url }}" alt="Траектория будущего"></div>
+          <div class="certificate-item"><img src="{{ '/assets/images/certificates/команда.png' | relative_url }}" alt="Команда"></div>
+          <div class="certificate-item"><img src="{{ '/assets/images/certificates/чемпионат.png' | relative_url }}" alt="Чемпионат"></div>
+          <div class="certificate-item"><img src="{{ '/assets/images/certificates/3D-%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5.png' | relative_url }}" alt="3D-моделирование"></div>
         </div>
       </div>
     </section>

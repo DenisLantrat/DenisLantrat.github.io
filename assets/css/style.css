@@ -1,0 +1,326 @@
+/* ===== СБРОС И БАЗОВЫЕ СТИЛИ ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  background: linear-gradient(135deg, #0a0e27 0%, #1a1a2e 25%, #16213e 50%, #0f3460 75%, #1a535c 100%);
+  background-attachment: fixed;
+  color: #ffffff;
+  line-height: 1.6;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* ===== БОКОВОЕ МЕНЮ ===== */
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 200px;
+  height: 100vh;
+  background: rgba(10, 14, 39, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 20px 0;
+  z-index: 1000;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.menu-toggle {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 40px;
+  height: 40px;
+  background: #7c3aed;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.menu-toggle:hover {
+  background: #6d28d9;
+  transform: scale(1.05);
+}
+
+.menu-toggle span {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: white;
+  position: relative;
+}
+
+.menu-toggle span::before,
+.menu-toggle span::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  background: white;
+  left: 0;
+}
+
+.menu-toggle span::before {
+  top: -6px;
+}
+
+.menu-toggle span::after {
+  top: 6px;
+}
+
+.sidebar nav {
+  margin-top: 80px;
+  padding: 0 20px;
+}
+
+.sidebar nav a {
+  display: block;
+  padding: 15px 10px;
+  color: #a0aec0;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  margin-bottom: 5px;
+}
+
+.sidebar nav a:hover,
+.sidebar nav a.active {
+  color: #ffffff;
+  background: rgba(124, 58, 237, 0.2);
+}
+
+/* ===== ОСНОВНОЙ КОНТЕНТ ===== */
+.main-content {
+  margin-left: 200px;
+  padding: 40px;
+  max-width: 1200px;
+}
+
+/* ===== СЕКЦИИ ===== */
+section {
+  margin-bottom: 60px;
+  scroll-margin-top: 40px;
+}
+
+/* ===== ГЛАВНАЯ СЕКЦИЯ ===== */
+.hero {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  letter-spacing: -2px;
+}
+
+.hero .subtitle {
+  font-size: 1.2rem;
+  color: #a0aec0;
+  font-weight: 400;
+}
+
+/* ===== КАРТОЧКИ ===== */
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 40px;
+  margin-bottom: 40px;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.15);
+  transform: translateY(-2px);
+}
+
+.card h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.card p {
+  font-size: 1.1rem;
+  color: #cbd5e0;
+  line-height: 1.8;
+}
+
+/* ===== НАВЫКИ ===== */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.skill-tag {
+  background: rgba(124, 58, 237, 0.2);
+  border: 1px solid rgba(124, 58, 237, 0.3);
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 0.95rem;
+  color: #e9d5ff;
+  transition: all 0.3s ease;
+}
+
+.skill-tag:hover {
+  background: rgba(124, 58, 237, 0.3);
+  transform: translateY(-2px);
+}
+
+/* ===== СТАТИСТИКА ===== */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-number {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #7c3aed;
+  margin-bottom: 10px;
+}
+
+.stat-label {
+  font-size: 1rem;
+  color: #a0aec0;
+}
+
+/* ===== СЕРТИФИКАТЫ ===== */
+.certificates-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.certificate-item {
+  aspect-ratio: 1;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.certificate-item:hover {
+  transform: scale(1.05);
+  border-color: rgba(124, 58, 237, 0.5);
+  box-shadow: 0 10px 30px rgba(124, 58, 237, 0.3);
+}
+
+.certificate-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ===== КОНТАКТЫ ===== */
+.contact-info {
+  margin-top: 20px;
+}
+
+.contact-info p {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.contact-info a {
+  color: #7c3aed;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+  color: #9f7aea;
+}
+
+/* ===== АДАПТИВНОСТЬ ===== */
+@media (max-width: 768px) {
+  .sidebar {
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+  }
+  
+  .sidebar.active {
+    transform: translateX(0);
+  }
+  
+  .main-content {
+    margin-left: 0;
+    padding: 20px;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .card {
+    padding: 25px;
+  }
+  
+  .certificates-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}
+
+/* ===== АНИМАЦИИ ===== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card {
+  animation: fadeIn 0.6s ease-out;
+}
+
+/* ===== СКРОЛЛБАР ===== */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0e27;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #7c3aed;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6d28d9;
+}

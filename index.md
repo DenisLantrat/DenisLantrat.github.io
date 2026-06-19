@@ -43,7 +43,7 @@ title: Денис Лантрат - Программист
     <section id="about">
       <div class="card">
         <h2>Обо мне</h2>
-        <p>Создаю свои проекты. В свободное время увлекаюсь фотографией.</p>
+        <p>Создаю свои проекты. В свободное время увлекаюсь фотографирую пейзажи.</p>
       </div>
     </section>
 
@@ -58,6 +58,7 @@ title: Денис Лантрат - Программист
           <span class="skill-tag">Python</span>
           <span class="skill-tag">Git</span>
           <span class="skill-tag">VS Code</span>
+          <span class="skill-tag">1с</span>
         </div>
       </div>
     </section>
@@ -68,7 +69,7 @@ title: Денис Лантрат - Программист
         <h2>Опыт</h2>
         <div class="stats-grid">
           <div class="stat-item">
-            <div class="stat-number">10+</div>
+            <div class="stat-number">5</div>
             <div class="stat-label">Проектов</div>
           </div>
           <div class="stat-item">
@@ -76,7 +77,7 @@ title: Денис Лантрат - Программист
             <div class="stat-label">Сертификатов</div>
           </div>
           <div class="stat-item">
-            <div class="stat-number">3+</div>
+            <div class="stat-number">3</div>
             <div class="stat-label">Года опыта</div>
           </div>
         </div>

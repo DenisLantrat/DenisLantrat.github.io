@@ -42,25 +42,27 @@ interactiveElements.forEach(el => {
 // ===== МОБИЛЬНОЕ МЕНЮ (СВОРАЧИВАЕМОЕ) =====
 const menuToggle = document.getElementById('menuToggle');
 const sidebar = document.getElementById('sidebar');
+const overlay = document.getElementById('overlay');
 
 // Открытие/закрытие по клику на кнопку
 menuToggle.addEventListener('click', (e) => {
   e.stopPropagation();
   sidebar.classList.toggle('active');
+  overlay.classList.toggle('active');
 });
 
 // Закрытие при клике на пункт меню
 document.querySelectorAll('.sidebar nav a').forEach(link => {
   link.addEventListener('click', () => {
     sidebar.classList.remove('active');
+    overlay.classList.remove('active');
   });
 });
 
-// Закрытие при клике вне меню
-document.addEventListener('click', (e) => {
-  if (!sidebar.contains(e.target) && e.target !== menuToggle) {
-    sidebar.classList.remove('active');
-  }
+// Закрытие при клике на затемнение
+overlay.addEventListener('click', () => {
+  sidebar.classList.remove('active');
+  overlay.classList.remove('active');
 });
 // ===== ПОДСВЕТКА АКТИВНОГО ПУНКТА МЕНЮ =====
 const sections = document.querySelectorAll('section');

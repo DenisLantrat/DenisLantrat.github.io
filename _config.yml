@@ -1,3 +1,25 @@
-title: Мой сайт
-description: Описание сайта
-theme: minima
+# Настройки сайта
+title: Денис Лантрат - Программист
+description: Портфолио программиста
+author: Денис Лантрат
+
+# URL сайта
+url: "https://denislantrat.github.io"
+baseurl: ""
+
+# Настройки Jekyll
+markdown: kramdown
+highlighter: rouge
+
+# Плагины для GitHub Pages
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Исключения из сборки
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor

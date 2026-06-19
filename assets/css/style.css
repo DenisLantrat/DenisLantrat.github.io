@@ -329,3 +329,30 @@ section {
 ::-webkit-scrollbar-thumb:hover {
   background: #7FDBDB;
 }
+
+/* ===== КАСТОМНЫЙ КУРСОР ===== */
+.cursor-glow {
+  position: fixed;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(175, 238, 238, 0.15) 0%, rgba(175, 238, 238, 0) 70%);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+
+.cursor-glow.active {
+  opacity: 1;
+}
+
+/* Увеличиваем свечение при наведении на интерактивные элементы */
+.card:hover ~ .cursor-glow,
+.skill-tag:hover ~ .cursor-glow,
+.certificate-item:hover ~ .cursor-glow {
+  width: 250px;
+  height: 250px;
+  background: radial-gradient(circle, rgba(175, 238, 238, 0.25) 0%, rgba(175, 238, 238, 0) 70%);
+}

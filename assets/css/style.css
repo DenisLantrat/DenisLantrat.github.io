@@ -324,13 +324,3 @@ section {
 
 
 
-/* ТЕСТ — если это работает, фон станет красным */
-body {
-  background: red !important;
-}
-
-.menu-toggle {
-  display: flex !important;
-  background: yellow !important;
-  z-index: 9999 !important;
-}

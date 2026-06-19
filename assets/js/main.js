@@ -1,3 +1,50 @@
+// ===== КАСТОМНЫЙ КУРСОР СО СВЕЧЕНИЕМ =====
+const cursorGlow = document.createElement('div');
+cursorGlow.className = 'cursor-glow';
+document.body.appendChild(cursorGlow);
+
+let mouseX = 0;
+let mouseY = 0;
+let currentX = 0;
+let currentY = 0;
+
+document.addEventListener('mousemove', (e) => {
+  mouseX = e.clientX;
+  mouseY = e.clientY;
+});
+
+// Плавное движение свечения
+function animateCursor() {
+  currentX += (mouseX - currentX) * 0.1;
+  currentY += (mouseY - currentY) * 0.1;
+  
+  cursorGlow.style.left = currentX + 'px';
+  cursorGlow.style.top = currentY + 'px';
+  
+  requestAnimationFrame(animateCursor);
+}
+
+animateCursor();
+
+// Показываем свечение при наведении на интерактивные элементы
+const interactiveElements = document.querySelectorAll('.card, .skill-tag, .certificate-item, a, button');
+
+interactiveElements.forEach(el => {
+  el.addEventListener('mouseenter', () => {
+    cursorGlow.classList.add('active');
+  });
+  
+  el.addEventListener('mouseleave', () => {
+    cursorGlow.classList.remove('active');
+  });
+});
+
+// ===== МОБИЛЬНОЕ МЕНЮ =====
+const menuToggle = document.getElementById('menuToggle');
+const sidebar = document.getElementById('sidebar');
+// ... (остальной код остаётся без изменений)
+
+
 // ===== МОБИЛЬНОЕ МЕНЮ =====
 const menuToggle = document.getElementById('menuToggle');
 const sidebar = document.getElementById('sidebar');

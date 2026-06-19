@@ -1,8 +1,6 @@
 ---
-layout: default
 title: Денис Лантрат - Программист
 ---
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -13,11 +11,13 @@ title: Денис Лантрат - Программист
 </head>
 <body>
 
+  <!-- КНОПКА МЕНЮ -->
+  <button class="menu-toggle" id="menuToggle" aria-label="Меню">
+    <span></span>
+  </button>
+
   <!-- БОКОВОЕ МЕНЮ -->
   <aside class="sidebar" id="sidebar">
-    <button class="menu-toggle" id="menuToggle" aria-label="Меню">
-      <span></span>
-    </button>
     <nav>
       <a href="#home" class="active">Главная</a>
       <a href="#about">Обо мне</a>
@@ -43,7 +43,7 @@ title: Денис Лантрат - Программист
     <section id="about">
       <div class="card">
         <h2>Обо мне</h2>
-        <p>Создаю свои проекты. В свободное люблю фотографировать.</p>
+        <p>Создаю свои проекты. В свободное время увлекаюсь фотографией пейзажей.</p>
       </div>
     </section>
 
@@ -84,7 +84,7 @@ title: Денис Лантрат - Программист
       </div>
     </section>
 
-               <!-- СЕРТИФИКАТЫ -->
+    <!-- СЕРТИФИКАТЫ -->
     <section id="certificates">
       <div class="card">
         <h2>Сертификаты</h2>

@@ -42,16 +42,12 @@ interactiveElements.forEach(el => {
 // ===== МОБИЛЬНОЕ МЕНЮ =====
 const menuToggle = document.getElementById('menuToggle');
 const sidebar = document.getElementById('sidebar');
-// ... (остальной код остаётся без изменений)
 
-
-// ===== МОБИЛЬНОЕ МЕНЮ =====
-const menuToggle = document.getElementById('menuToggle');
-const sidebar = document.getElementById('sidebar');
-
-menuToggle.addEventListener('click', () => {
-  sidebar.classList.toggle('active');
-});
+if (menuToggle) {
+  menuToggle.addEventListener('click', () => {
+    sidebar.classList.toggle('active');
+  });
+}
 
 // Закрытие меню при клике на пункт (для мобильных)
 document.querySelectorAll('.sidebar nav a').forEach(link => {

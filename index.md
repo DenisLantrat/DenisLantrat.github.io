@@ -11,6 +11,9 @@ title: Денис Лантрат - Программист
 </head>
 <body>
 
+  <!-- ЗАТЕМНЕНИЕ ФОНА -->
+  <div class="overlay" id="overlay"></div>
+
   <!-- КНОПКА МЕНЮ -->
   <button class="menu-toggle" id="menuToggle" aria-label="Меню">
     <span></span>

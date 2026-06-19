@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Елизавета - Frontend Developer
+title: Денис Лантрат - Программист
 ---
 
 <!DOCTYPE html>
@@ -34,8 +34,8 @@ title: Елизавета - Frontend Developer
     <!-- ГЛАВНАЯ -->
     <section id="home" class="hero">
       <div>
-        <h1>Елизавета</h1>
-        <p class="subtitle">Frontend • UI/UX • Developer</p>
+        <h1>Денис Лантрат</h1>
+        <p class="subtitle">Программист</p>
       </div>
     </section>
 
@@ -43,7 +43,7 @@ title: Елизавета - Frontend Developer
     <section id="about">
       <div class="card">
         <h2>Обо мне</h2>
-        <p>Создаю быстрые, красивые и современные интерфейсы.</p>
+        <p>Создаю свои проекты. В свободное время увлекаюсь фотографией.</p>
       </div>
     </section>
 
@@ -54,18 +54,10 @@ title: Елизавета - Frontend Developer
         <div class="skills-grid">
           <span class="skill-tag">HTML</span>
           <span class="skill-tag">CSS</span>
-          <span class="skill-tag">SCSS</span>
           <span class="skill-tag">JavaScript</span>
-          <span class="skill-tag">TypeScript</span>
-          <span class="skill-tag">React</span>
-          <span class="skill-tag">Vue</span>
-          <span class="skill-tag">Next.js</span>
-          <span class="skill-tag">Redux</span>
+          <span class="skill-tag">Python</span>
           <span class="skill-tag">Git</span>
-          <span class="skill-tag">Figma</span>
-          <span class="skill-tag">Photoshop</span>
-          <span class="skill-tag">UI/UX</span>
-          <span class="skill-tag">1C</span>
+          <span class="skill-tag">VS Code</span>
         </div>
       </div>
     </section>
@@ -96,7 +88,6 @@ title: Елизавета - Frontend Developer
       <div class="card">
         <h2>Сертификаты</h2>
         <div class="certificates-grid">
-          <!-- Замените названия файлов на свои -->
           <div class="certificate-item"><img src="{{ '/assets/images/certificates/1.jpg' | relative_url }}" alt="Сертификат 1"></div>
           <div class="certificate-item"><img src="{{ '/assets/images/certificates/2.jpg' | relative_url }}" alt="Сертификат 2"></div>
           <div class="certificate-item"><img src="{{ '/assets/images/certificates/3.jpg' | relative_url }}" alt="Сертификат 3"></div>
@@ -107,25 +98,6 @@ title: Елизавета - Frontend Developer
           <div class="certificate-item"><img src="{{ '/assets/images/certificates/8.jpg' | relative_url }}" alt="Сертификат 8"></div>
           <div class="certificate-item"><img src="{{ '/assets/images/certificates/9.jpg' | relative_url }}" alt="Сертификат 9"></div>
           <div class="certificate-item"><img src="{{ '/assets/images/certificates/10.jpg' | relative_url }}" alt="Сертификат 10"></div>
-          <div class="certificate-item"><img src="{{ '/assets/images/certificates/11.jpg' | relative_url }}" alt="Сертификат 11"></div>
-          <div class="certificate-item"><img src="{{ '/assets/images/certificates/12.jpg' | relative_url }}" alt="Сертификат 12"></div>
-          <div class="certificate-item"><img src="{{ '/assets/images/certificates/13.jpg' | relative_url }}" alt="Сертификат 13"></div>
-          <div class="certificate-item"><img src="{{ '/assets/images/certificates/14.jpg' | relative_url }}" alt="Сертификат 14"></div>
-          <div class="certificate-item"><img src="{{ '/assets/images/certificates/15.jpg' | relative_url }}" alt="Сертификат 15"></div>
-          <div class="certificate-item"><img src="{{ '/assets/images/certificates/16.jpg' | relative_url }}" alt="Сертификат 16"></div>
-          <div class="certificate-item"><img src="{{ '/assets/images/certificates/17.jpg' | relative_url }}" alt="Сертификат 17"></div>
-          <div class="certificate-item"><img src="{{ '/assets/images/certificates/18.jpg' | relative_url }}" alt="Сертификат 18"></div>
-          <div class="certificate-item"><img src="{{ '/assets/images/certificates/19.jpg' | relative_url }}" alt="Сертификат 19"></div>
-          <div class="certificate-item"><img src="{{ '/assets/images/certificates/20.jpg' | relative_url }}" alt="Сертификат 20"></div>
-          <div class="certificate-item"><img src="{{ '/assets/images/certificates/21.jpg' | relative_url }}" alt="Сертификат 21"></div>
-          <div class="certificate-item"><img src="{{ '/assets/images/certificates/22.jpg' | relative_url }}" alt="Сертификат 22"></div>
-          <div class="certificate-item"><img src="{{ '/assets/images/certificates/23.jpg' | relative_url }}" alt="Сертификат 23"></div>
-          <div class="certificate-item"><img src="{{ '/assets/images/certificates/24.jpg' | relative_url }}" alt="Сертификат 24"></div>
-          <div class="certificate-item"><img src="{{ '/assets/images/certificates/25.jpg' | relative_url }}" alt="Сертификат 25"></div>
-          <div class="certificate-item"><img src="{{ '/assets/images/certificates/26.jpg' | relative_url }}" alt="Сертификат 26"></div>
-          <div class="certificate-item"><img src="{{ '/assets/images/certificates/27.jpg' | relative_url }}" alt="Сертификат 27"></div>
-          <div class="certificate-item"><img src="{{ '/assets/images/certificates/28.jpg' | relative_url }}" alt="Сертификат 28"></div>
-          <div class="certificate-item"><img src="{{ '/assets/images/certificates/29.jpg' | relative_url }}" alt="Сертификат 29"></div>
         </div>
       </div>
     </section>
@@ -135,8 +107,8 @@ title: Елизавета - Frontend Developer
       <div class="card">
         <h2>Контакты</h2>
         <div class="contact-info">
-          <p>Email: <a href="mailto:elizavetaliask@mail.ru">elizavetaliask@mail.ru</a></p>
-          <p>Telegram: <a href="https://t.me/vetkaass" target="_blank">@vetkaass</a></p>
+          <p>Email: <a href="mailto:Denchik210806@yandex.ru">Denchik210806@yandex.ru</a></p>
+          <p>Telegram: <a href="https://t.me/denislantrat" target="_blank">@denislantrat</a></p>
         </div>
       </div>
     </section>

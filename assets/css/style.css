@@ -19,7 +19,7 @@ body {
   overflow-x: hidden;
 }
 
-/* ===== БОКОВОЕ МЕНЮ (СТАТИЧНОЕ) ===== */
+/* ===== БОКОВОЕ МЕНЮ (СВОРАЧИВАЕМОЕ) ===== */
 .sidebar {
   position: fixed;
   left: 0;
@@ -31,10 +31,17 @@ body {
   padding: 20px 0;
   z-index: 1000;
   border-right: 1px solid rgba(175, 238, 238, 0.15);
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
 }
 
+.sidebar.active {
+  transform: translateX(0);
+}
+
+/* Кнопка меню — ВСЕГДА видна */
 .menu-toggle {
-  position: absolute;
+  position: fixed;
   top: 20px;
   left: 20px;
   width: 40px;
@@ -46,6 +53,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 1001;
   transition: all 0.3s ease;
 }
 
@@ -101,9 +109,9 @@ body {
   background: rgba(175, 238, 238, 0.2);
 }
 
-/* ===== ОСНОВНОЙ КОНТЕНТ (ЦЕНТРИРОВАННЫЙ) ===== */
+/* ===== ОСНОВНОЙ КОНТЕНТ (НА ВСЮ ШИРИНУ) ===== */
 .main-content {
-  margin-left: 200px;
+  margin-left: 0;
   margin-right: auto;
   padding: 40px;
   max-width: 1100px;
@@ -267,19 +275,27 @@ section {
   color: #ffffff;
 }
 
+/* ===== КАСТОМНЫЙ КУРСОР СО СВЕЧЕНИЕМ ===== */
+.cursor-glow {
+  position: fixed;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(175, 238, 238, 0.15) 0%, rgba(175, 238, 238, 0) 70%);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+
+.cursor-glow.active {
+  opacity: 1;
+}
+
 /* ===== АДАПТИВНОСТЬ ===== */
 @media (max-width: 768px) {
-  .sidebar {
-    transform: translateX(-100%);
-    transition: transform 0.3s ease;
-  }
-  
-  .sidebar.active {
-    transform: translateX(0);
-  }
-  
   .main-content {
-    margin-left: 0;
     padding: 20px;
   }
   
@@ -328,31 +344,4 @@ section {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #7FDBDB;
-}
-
-/* ===== КАСТОМНЫЙ КУРСОР ===== */
-.cursor-glow {
-  position: fixed;
-  width: 200px;
-  height: 200px;
-  background: radial-gradient(circle, rgba(175, 238, 238, 0.15) 0%, rgba(175, 238, 238, 0) 70%);
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 9999;
-  transform: translate(-50%, -50%);
-  transition: opacity 0.3s ease;
-  opacity: 0;
-}
-
-.cursor-glow.active {
-  opacity: 1;
-}
-
-/* Увеличиваем свечение при наведении на интерактивные элементы */
-.card:hover ~ .cursor-glow,
-.skill-tag:hover ~ .cursor-glow,
-.certificate-item:hover ~ .cursor-glow {
-  width: 250px;
-  height: 250px;
-  background: radial-gradient(circle, rgba(175, 238, 238, 0.25) 0%, rgba(175, 238, 238, 0) 70%);
 }

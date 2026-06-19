@@ -1,13 +1,14 @@
 ---
-title: Денис Лантрат - Программист
+---
+---
 ---
 <!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ page.title }}</title>
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <title>Денис Лантрат - Программист</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
 
@@ -92,23 +93,23 @@ title: Денис Лантрат - Программист
       <div class="card">
         <h2>Сертификаты</h2>
         <div class="certificates-grid">
-          <div class="certificate-item"><img src="{{ '/cert_01_sql.png' | relative_url }}" alt="SQL"></div>
-          <div class="certificate-item"><img src="{{ '/cert_02_gramota.png' | relative_url }}" alt="Грамота СТЭТ"></div>
-          <div class="certificate-item"><img src="{{ '/cert_03_gruppa.png' | relative_url }}" alt="Группа"></div>
-          <div class="certificate-item"><img src="{{ '/cert_04_foto.png' | relative_url }}" alt="Диплом Фотоконкурс"></div>
-          <div class="certificate-item"><img src="{{ '/cert_05_vesna.png' | relative_url }}" alt="Дипломная студенческая весна"></div>
-          <div class="certificate-item"><img src="{{ '/cert_06_diktant.png' | relative_url }}" alt="Диктант Победы"></div>
-          <div class="certificate-item"><img src="{{ '/cert_07_kuratorstvo2.png' | relative_url }}" alt="Кураторство 2"></div>
-          <div class="certificate-item"><img src="{{ '/cert_08_kuratorstvo.png' | relative_url }}" alt="Кураторство"></div>
-          <div class="certificate-item"><img src="{{ '/cert_09_media.png' | relative_url }}" alt="Медиа-школа"></div>
-          <div class="certificate-item"><img src="{{ '/cert_10_mediac.png' | relative_url }}" alt="Медиачетверг"></div>
-          <div class="certificate-item"><img src="{{ '/cert_11_vesna_cert.png' | relative_url }}" alt="Сертификат студенческой весны"></div>
-          <div class="certificate-item"><img src="{{ '/cert_12_topchan.png' | relative_url }}" alt="Топчан"></div>
-          <div class="certificate-item"><img src="{{ '/cert_13_topchan1.png' | relative_url }}" alt="Топчан 1"></div>
-          <div class="certificate-item"><img src="{{ '/cert_14_traektoria.png' | relative_url }}" alt="Траектория будущего"></div>
-          <div class="certificate-item"><img src="{{ '/cert_15_komanda.png' | relative_url }}" alt="Команда"></div>
-          <div class="certificate-item"><img src="{{ '/cert_16_chempionat.png' | relative_url }}" alt="Чемпионат"></div>
-          <div class="certificate-item"><img src="{{ '/cert_17_3d.png' | relative_url }}" alt="3D-моделирование"></div>
+          <div class="certificate-item"><img src="/cert_01_sql.png" alt="SQL"></div>
+          <div class="certificate-item"><img src="/cert_02_gramota.png" alt="Грамота СТЭТ"></div>
+          <div class="certificate-item"><img src="/cert_03_gruppa.png" alt="Группа"></div>
+          <div class="certificate-item"><img src="/cert_04_foto.png" alt="Диплом Фотоконкурс"></div>
+          <div class="certificate-item"><img src="/cert_05_vesna.png" alt="Дипломная студенческая весна"></div>
+          <div class="certificate-item"><img src="/cert_06_diktant.png" alt="Диктант Победы"></div>
+          <div class="certificate-item"><img src="/cert_07_kuratorstvo2.png" alt="Кураторство 2"></div>
+          <div class="certificate-item"><img src="/cert_08_kuratorstvo.png" alt="Кураторство"></div>
+          <div class="certificate-item"><img src="/cert_09_media.png" alt="Медиа-школа"></div>
+          <div class="certificate-item"><img src="/cert_10_mediac.png" alt="Медиачетверг"></div>
+          <div class="certificate-item"><img src="/cert_11_vesna_cert.png" alt="Сертификат студенческой весны"></div>
+          <div class="certificate-item"><img src="/cert_12_topchan.png" alt="Топчан"></div>
+          <div class="certificate-item"><img src="/cert_13_topchan1.png" alt="Топчан 1"></div>
+          <div class="certificate-item"><img src="/cert_14_traektoria.png" alt="Траектория будущего"></div>
+          <div class="certificate-item"><img src="/cert_15_komanda.png" alt="Команда"></div>
+          <div class="certificate-item"><img src="/cert_16_chempionat.png" alt="Чемпионат"></div>
+          <div class="certificate-item"><img src="/cert_17_3d.png" alt="3D-моделирование"></div>
         </div>
       </div>
     </section>
@@ -126,6 +127,6 @@ title: Денис Лантрат - Программист
 
   </main>
 
-  <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+  <script src="/assets/js/main.js"></script>
 </body>
 </html>
